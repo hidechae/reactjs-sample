@@ -38,7 +38,7 @@ gulp.task 'sass', ->
 
 gulp.task 'browserify', ->
   browserify
-    entries: [ './src/main.jsx' ]
+    entries: [ './src/main.js' ]
     transform: [ 'reactify', 'debowerify' ]
   .bundle()
   .pipe source "main.js"

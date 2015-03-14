@@ -1,10 +1,6 @@
 {
   "name": "APP_NAME",
   "dependencies": {
-    "jquery": "",
-    "bootstrap-sass-official": "",
-    "react": "",
-    "DefinitelyTyped": "",
-    "screenfull": ""
+    "bootstrap-sass-official": ""
   }
 }
