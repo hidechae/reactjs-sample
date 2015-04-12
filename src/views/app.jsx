@@ -2,22 +2,16 @@
 var React  = require('react'),
     Router = require('react-router'),
     Link = Router.Link,
-    RouteHandler = Router.RouteHandler
+    RouteHandler = Router.RouteHandler,
+
+    Navbar = require('../components/layout/navbar.jsx')
 ;
 
 var App = React.createClass({
   render: function () {
     return (
       <div>
-        <header>
-          <ul>
-            <li><Link to="app">Dashboard</Link></li>
-            <li><Link to="inbox">Inbox</Link></li>
-            <li><Link to="calendar">Calendar</Link></li>
-          </ul>
-          @App
-        </header>
-
+        <Navbar/>
         {/* this is the important part */}
         <RouteHandler/>
       </div>

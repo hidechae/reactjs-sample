@@ -10,8 +10,13 @@
         "coffee-script"       : "",
 
         "react"               : "^0.12.1",
+        "react-bootstrap"     : "^0.13.0",
         "react-router"        : "^0.11.4",
+        "flux"                : "^2.0.1",
+        "bootstrap-sass"      : "^3.3.4",
+
         "gulp"                : "",
+        "gulp-jslint"         : "",
         "gulp-react"          : "",
         "gulp-sass"           : "",
         "gulp-minify-css"     : "",
@@ -19,9 +24,8 @@
         "gulp-watch"          : "",
         "rimraf"              : "",
         "mkdirp"              : "",
-        "uniq"                : "",
-        "reactify"            : "",
-        "browserify"          : "",
+        "browserify"          : "^6.3.3",
+        "reactify"            : "^0.17.1",
         "debowerify"          : "",
         "vinyl-source-stream" : ""
     },

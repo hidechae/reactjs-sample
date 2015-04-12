@@ -1,4 +1,5 @@
 gulp       = require 'gulp'
+jslint     = require 'gulp-jslint'
 sass       = require 'gulp-sass'
 minifyCss  = require 'gulp-minify-css'
 concat     = require 'gulp-concat'
@@ -38,8 +39,15 @@ gulp.task 'sass', ->
 
 gulp.task 'browserify', ->
   browserify
-    entries: [ './src/main.js' ]
-    transform: [ 'reactify', 'debowerify' ]
+    entries: [ './src/app.jsx' ]
+    transform: [ ['reactify', {"es6": true}], 'debowerify' ]
   .bundle()
-  .pipe source "main.js"
+  .pipe source "app.js"
   .pipe gulp.dest dist.js
+
+gulp.task 'jslint', ->
+  gulp.src [ './src/*/**' ]
+    .pipe jslint({
+    })
+    .on 'error', (error) ->
+      console.error String error
